@@ -1,0 +1,325 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #c493f6;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  display: block;
+  max-width: 10%;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+.logo span {
+  color: #c493f6;
+}
+
+.container-fluid {
+  margin-top: 100px;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.4rem;
+}
+
+.img-sm {
+  width: 300px;
+  height: 230px;
+  border-radius: 20px;
+}
+
+.itemside .info {
+  padding-left: 15px;
+  padding-right: 7px;
+}
+
+.table-shopping-cart .price-wrap {
+  line-height: 1.2;
+}
+
+.table-shopping-cart .price {
+  font-weight: bold;
+  margin-right: 5px;
+  display: block;
+}
+
+.text-muted {
+  color: rgb(22, 21, 22) !important;
+  font-size: 20px;
+}
+.text-muted small {
+  color: rgb(20, 20, 20);
+  font-weight: 200px;
+}
+figcaption > a:visited {
+  text-decoration: none;
+  color: rgb(19, 18, 18);
+}
+figcaption > a {
+  text-decoration: none;
+  color: rgb(24, 22, 22);
+  font-size: medium;
+  text-align: center;
+  font-size: 20px;
+}
+a {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.Confirmbutton {
+  margin: 5px 10px 5px 10px;
+  border-style: groove !important;
+  width: 100%;
+  font-size: 40px;
+  color: whitesmoke;
+  border: whitesmoke;
+  border-radius: 50px;
+}
+
+.Confirmbutton:hover {
+  color: #ffffff;
+  background-color: rgb(114, 70, 197);
+  border-color: whitesmoke;
+}
+
+.Continuebutton {
+  margin: 5px 10px 5px 10px;
+
+  border-style: groove !important;
+  width: 100%;
+  font-size: 40px;
+  color: whitesmoke;
+  border: whitesmoke;
+  border-radius: 50px;
+}
+
+.Continuebutton:hover {
+  color: #ffffff;
+  background-color: rgb(114, 70, 197);
+  border-color: whitesmoke;
+  border-style: groove;
+}
+
+.card {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+  word-wrap: break-word;
+  background-blend-mode: color-burn;
+  background-clip: border-box;
+  border-radius: 0px;
+}
+
+.itemside {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.redHeart {
+  color: red;
+}
+
+.dlist-align {
+  color: whitesmoke;
+  display: flex;
+  align-content: flex-end;
+  justify-content: flex-end;
+}
+
+[class*="dlist-"] {
+  margin-bottom: 5px;
+}
+
+.price {
+  font-weight: 600;
+  color: whitesmoke;
+}
+
+.btn.btn-out {
+  outline: 1px solid #fff;
+  outline-offset: -5px;
+}
+
+.btn-main {
+  border-radius: 2px;
+  text-transform: capitalize;
+  font-size: 20px;
+  padding: 10px 19px;
+  margin: 50px;
+  cursor: pointer;
+  color: #fff;
+  width: 100%;
+}
+
+.btn-light {
+  color: #ffffff;
+  border-color: #f8f9fa;
+  font-size: 20px;
+}
+
+#kylie {
+  width: 40px;
+  border-color: whitesmoke;
+  border-radius: 70px;
+}
+
+#kylie2 {
+  width: 40px;
+  border-color: whitesmoke;
+  border-radius: 70px;
+}
+#kylie3 {
+  width: 40px;
+  border-color: whitesmoke;
+  border-radius: 70px;
+}
+
+#item1 > td.text-right.d-none.d-md-block > a:nth-child(2) {
+  margin: 20px 10px;
+  padding: 0px 40px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#item2 > td.text-right.d-none.d-md-block > a.btn.btn-light.btn-round {
+  margin: 20px 10px;
+  padding: 0px 40px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#item3 > td.text-right.d-none.d-md-block > a.btn.btn-light.btn-round {
+  margin: 20px 10px;
+  padding: 0px 40px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#item1 > td:nth-child(3) > div {
+  margin: 0px 50px;
+  padding: 0px 65px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#item2 > td:nth-child(3) > div {
+  margin: 0px 50px;
+  padding: 0px 65px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#item3 > td:nth-child(3) > div {
+  margin: 0px 50px;
+  padding: 0px 65px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body > div.container-fluid > div > div > div > div {
+  margin: 0px 50px;
+  padding: 0px 65px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-style: groove;
+  border-radius: 50px;
+  border-color: whitesmoke;
+}
+
+body
+  > div.container-fluid
+  > div
+  > aside
+  > div
+  > div
+  > table
+  > thead
+  > tr
+  > th:nth-child(1) {
+  color: rgb(114, 70, 197);
+  font-size: 30px;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+body
+  > div.container-fluid
+  > div
+  > aside
+  > div
+  > div
+  > table
+  > thead
+  > tr
+  > th:nth-child(2) {
+  color: rgb(114, 70, 197);
+  font-size: 30px;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+body
+  > div.container-fluid
+  > div
+  > aside
+  > div
+  > div
+  > table
+  > thead
+  > tr
+  > th:nth-child(3) {
+  color: rgb(114, 70, 197);
+  font-size: 30px;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+#item2 > td:nth-child(1) > figure > figcaption > a {
+  margin-left: -122px;
+}
+
+#item3 > td:nth-child(1) > figure > figcaption > a {
+  margin-left: -50px;
+}

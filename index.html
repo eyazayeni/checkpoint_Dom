@@ -1,0 +1,252 @@
+<!-- @format -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>shopping Cart</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo">
+        <h1>Shopping <span>Cart</span></h1>
+      </div>
+    </header>
+    
+      </div>
+    <div class="container-fluid">
+      <div class="row">
+        <aside class="col-lg-9">
+          <div class="card">
+            <div class="table-responsive">
+              <table class="table table-borderless table-shopping-cart">
+                <thead class="text-muted">
+                  <tr class="small text-uppercase">
+                    <th scope="col">products</th>
+                    <th scope="col" >Quantity</th>
+                    <th scope="col" >Price</th>
+              
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr id="item1">
+                    <td>
+                      <figure class="itemside align-items-center">
+                        <div class="aside">
+                          <img
+                            src="images/skin_set.png"
+                            class="img-sm"
+                          />
+                        </div>
+                        <figcaption class="info">
+                          <a
+                            href="https://kyliecosmetics.com/collections/kylie-skin/products/kylie-skin-set?variant=43927618781426" 
+                            class="title text-dark"
+                            data-abc="true"
+                            >kylie skin set</a
+                          >
+                          <ul class="text-muted small">
+                          <li>foaming face wash</li>
+                          <li>walnut face scrub</li>
+                          <li>vanilla milk toner</li>
+                          <li>vitamin c serum</li>
+                        <li>face moisturizer</li>
+                        <li>eye cream</li>
+                      </ul>
+                         
+                        </figcaption>
+                      </figure> 
+                    </td>
+                    <td>
+                       <button onclick="addItem(1)">+ </button>
+
+                        <input type="text" id="kylie" value=1>
+                      <button onclick='rmvItem(1)'>
+                          -
+                      </button>
+                    </td>
+                    <td>
+                      <div class="price-wrap">
+                        <var class="price" id="price1">200</var>
+                        <small class="text-muted"> € </small>
+                      </div>
+                    </td>
+                    <td class="text-right d-none d-md-block">
+                      <a
+                        data-original-title="Save to Wishlist"
+                        title=""
+                        href=""
+                        class="btn btn-light"
+                        data-toggle="tooltip"
+                        data-abc="true"
+                        onclick="switchWishList(1)"
+                      >
+                        <i class="fa fa-heart" id='heart1'></i
+                      ></a>
+                      <a  href="" class="btn btn-light" data-abc="true" onclick="removeElement(1)">
+                        Remove</a
+                      >
+                    </td>
+                  </tr>
+                  <tr id="item2">
+                    <td>
+                      <figure class="itemside align-items-center">
+                        <div class="aside">
+                          <img
+                            src="images/palette.png"
+                            class="img-sm"
+                          />
+                        </div>
+                        <figcaption class="info">
+                          <a
+                            href="https://kyliecosmetics.com/collections/kylie-cosmetics-eyes/products/24k-birthday-collection-pressed-powder-palette?variant=43927611998450" target="_blank"
+                            class="title text-dark"
+                            data-abc="true"
+                            >pressed powder palette</a
+                          >
+                          
+                            <ul class="text-muted small">
+                              <li>make a wish (light beige matte)</li>
+                              <li> shine baby (orange with gold glitter)</li>
+                              <li>certified gold (golden bronze metallic)</li>
+                              <li>leo szn (light brown matte)</li>
+                            <li>winning (red brown matte)</li>
+                            <li>better than gold (bronze glitter)</li>
+                          </ul>
+                             
+                        
+                        </figcaption>
+                      </figure>
+                    </td>
+                    <td>
+                      <button onclick="addItem(2)">+ </button>
+
+                        <input type="text" id="kylie2" value=1>
+                      <button onclick='rmvItem(2)'>
+                          -
+                      </button>
+                    </td>
+                    <td>
+                      <div class="price-wrap">
+                        <var class="price" id="price2">120</var>
+                        <small class="text-muted">€</small>
+                      </div>
+                    </td>
+                    <td class="text-right d-none d-md-block">
+                      <a
+                        data-original-title="Save to Wishlist"
+                        title=""
+                        href=""
+                        class="btn btn-light"
+                        data-toggle="tooltip"
+                        data-abc="true"
+                        onclick="switchWishList(2)"
+                      >
+                        <i class="fa fa-heart" id='heart2'></i
+                      ></a>
+                      <a href="" class="btn btn-light btn-round" data-abc="true" onclick="removeElement(2)">Remove
+
+                      </a>
+                    </td>
+                  </tr>
+                  <tr id="item3">
+                    <td>
+                      <figure class="itemside align-items-center">
+                        <div class="aside">
+                          <img
+                            src="images/trio_powder.png"
+                            class="img-sm"
+                          />
+                        </div>
+                        <figcaption class="info">
+                          <a
+                            href="https://kyliecosmetics.com/collections/kylie-cosmetics-face/products/best-selling-powders-trio?variant=44218197672178" target="_blank"
+                            class="title text-dark"
+                            data-abc="true"
+                            >best-selling powders trio</a
+                          >
+                          <ul class="text-muted small">
+                            <li>kylighter illuminating powder</li>
+                            <li> pressed blush powder</li>
+                            <li>pressed bronzing powder</li>
+                           
+                        </ul>
+                        </figcaption>
+                      </figure>
+                    </td>
+                    <td>
+                      <button onclick="addItem(3)">+ </button>
+
+                        <input type="text" id="kylie3" value=1>
+                      <button onclick='rmvItem(3)'>
+                          -
+                      </button>
+                    </td>
+                    <td>
+                      <div class="price-wrap">
+                        <var class="price" id="price3">56</var>
+                        <small class="text-muted">€</small>
+                      </div>
+                    </td>
+                    <td class="text-right d-none d-md-block">
+                      <a
+                        data-original-title="Save to Wishlist"
+                        title=""
+                        href=""
+                        class="btn btn-light"
+                        data-toggle="tooltip"
+                        data-abc="true"
+                        onclick="switchWishList(3)"
+                      >
+                        <i class="fa fa-heart" id='heart3'></i
+                      ></a>
+                      <a
+                        href="" class="btn btn-light btn-round" data-abc="true" onclick="removeElement(3)">
+                        Remove</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </aside>
+          <div class="card">
+            <div class="card-body">
+             
+              
+              <div class="dlist-align">
+                <dt>Total:</dt>
+                <dd class="text-right text-dark b ml-3">
+                  <strong>$</strong><strong id='total'>376</strong>
+                </dd>
+              </div>
+              <hr />
+              <a
+                href="#"
+                class="Confirmbutton"
+                data-abc="true"
+              >
+                Make Purchase
+              </a>
+              <a
+                href="#"
+                class="Continuebutton"
+                data-abc="true"
+                >Continue Shopping</a
+              >
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <script src="https://kit.fontawesome.com/e35dec94f9.js" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+  </body>
+
+</html>
