@@ -31,7 +31,7 @@ function addItem(item) {
     document.querySelector("#price3").innerHTML = price + 56;
     adjustPrices();
   } else {
-    console.log("shit is happining ");
+    console.log("Ops");
   }
 }
 
